@@ -1,0 +1,862 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header nav .mobilemenu {
+  display: none;
+}
+header .topnav {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  background-color: #bd5d38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+header .topnav #menubtn {
+  display: none;
+}
+header .topnav #navH2 {
+  display: none;
+}
+header .topnav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+header .topnav > ul img {
+  max-width: 10rem;
+  max-height: 10rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  -o-border-image: initial;
+     border-image: initial;
+  border-radius: 50%;
+}
+header .topnav > ul img:hover {
+  border-color: #96401e;
+  transition: 0.5s;
+}
+header .topnav > ul > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+header .topnav > ul > ul > li a {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+header .topnav > ul > ul > li > a:hover {
+  color: #d9d9d9;
+  transition: 0.4s;
+}
+
+.frontend {
+  margin-left: 300px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://wallpapercave.com/wp/wp4974476.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.frontend #frontEndH2 {
+  color: white;
+  text-shadow: 3px 3px 10px black;
+  font-size: 5rem;
+}
+
+.aboutSection {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 350px;
+  padding: 100px 20px 100px 350px;
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+}
+.aboutSection .aboutMain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+}
+.aboutSection .aboutMain h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 6rem;
+  font-weight: 900;
+  font-family: "Courier New", Courier, monospace;
+}
+.aboutSection .aboutMain h1 span {
+  color: #96401e;
+}
+.aboutSection .aboutMain .numberMail {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutSection .aboutMain .numberMail > h3 {
+  color: rgb(86, 84, 84);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.aboutSection .aboutMain .numberMail > a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #96401e;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+.aboutSection .aboutMain .numberMail > a:hover {
+  color: red;
+}
+.aboutSection .aboutMain > h4 {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.aboutSection .aboutMain .social-icon {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.aboutSection .aboutMain .social-icon > a {
+  color: white;
+  width: 60px;
+  height: 60px;
+  background-color: #565656;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.aboutSection .aboutMain .social-icon > a i {
+  font-size: 25px;
+}
+.aboutSection .aboutMain .social-icon > a:hover {
+  background-color: #96401e;
+  transition: 0.4s;
+}
+
+.education {
+  width: 100%;
+  min-height: 90vh;
+  padding: 80px 20px 80px 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+}
+.education > h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.education .educationDiv {
+  width: 90%;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.education .educationDiv #educationDivTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.education .educationDiv #educationDivTexts > a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.education .educationDiv #educationDivTexts > a > h3 {
+  color: black;
+  font-size: 30px;
+}
+.education .educationDiv #educationDivTexts > a > h3 i {
+  color: black;
+  font-size: 25px;
+}
+.education .educationDiv #educationDivTexts > a:hover i,
+.education .educationDiv #educationDivTexts > a:hover h3 {
+  color: red;
+  transition: 0.4s;
+}
+.education .educationDiv #educationDivTexts > h4 {
+  color: gray;
+  font-weight: 100;
+  font-size: 18px;
+}
+.education .educationDiv #educationDivTexts h5 {
+  font-size: 20px;
+  font-weight: 100;
+  color: black;
+}
+.education .educationDiv > p {
+  font-size: 18px;
+  color: #c0776e;
+}
+
+.skills {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px 80px 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  overflow: hidden;
+}
+.skills > h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.skills > h3 {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.skills > .skills-icons {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.skills > .skills-icons > a > i {
+  font-size: 50px;
+  color: gray;
+}
+.skills > .skills-icons > a > img {
+  width: 150px;
+}
+.skills #skillsUl {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+.skills #skillsUl li {
+  font-size: 18px;
+  list-style: square;
+}
+
+.interests {
+  width: 100%;
+  min-height: 50vh;
+  padding: 80px 20px 80px 350px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  gap: 30px;
+}
+.interests > h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.interests > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.interests > div > h3 {
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 998px) {
+  header nav {
+    width: 100%;
+    min-height: 80px;
+    background-color: #bd5d38;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  header nav .menuactive {
+    top: 8%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    position: fixed;
+    background-color: #bd5d38;
+    z-index: 1;
+    align-items: start;
+    justify-content: center;
+    transition: 1s;
+    padding-left: 30px;
+  }
+  header nav .menuactive > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+  }
+  header nav .menuactive > ul > li a {
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  header nav .menuactive > ul > li > a:hover {
+    color: #d9d9d9;
+    transition: 0.4s;
+  }
+  header nav .topnav {
+    width: 90%;
+    height: 80px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav .topnav #menubtn {
+    display: block;
+    color: white;
+    font-size: 22px;
+  }
+  header nav .topnav #navH2 {
+    display: block;
+    color: white;
+    font-size: 25px;
+  }
+  header nav .topnav > ul {
+    display: none;
+  }
+  .frontend {
+    margin-left: 0;
+  }
+  .aboutSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 350px;
+    padding: 100px 20px 100px 50px;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+  }
+  .aboutSection .aboutMain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+  .aboutSection .aboutMain h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 6rem;
+    font-weight: 900;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .aboutSection .aboutMain h1 span {
+    color: #96401e;
+  }
+  .aboutSection .aboutMain .numberMail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .aboutSection .aboutMain .numberMail > h3 {
+    color: rgb(86, 84, 84);
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .aboutSection .aboutMain .numberMail > a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #96401e;
+    -webkit-text-decoration: dotted;
+            text-decoration: dotted;
+  }
+  .aboutSection .aboutMain .numberMail > a:hover {
+    color: red;
+  }
+  .aboutSection .aboutMain > h4 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.7;
+  }
+  .aboutSection .aboutMain .social-icon {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .aboutSection .aboutMain .social-icon > a {
+    color: white;
+    width: 60px;
+    height: 60px;
+    background-color: #565656;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .aboutSection .aboutMain .social-icon > a i {
+    font-size: 25px;
+  }
+  .aboutSection .aboutMain .social-icon > a:hover {
+    background-color: #96401e;
+    transition: 0.4s;
+  }
+  .education {
+    width: 100%;
+    min-height: 90vh;
+    padding: 80px 20px 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+  }
+  .education > h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  .education .educationDiv {
+    width: 90%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .education .educationDiv #educationDivTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .education .educationDiv #educationDivTexts > a > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .education .educationDiv #educationDivTexts > a > div i {
+    color: black;
+    font-size: 25px;
+  }
+  .education .educationDiv #educationDivTexts > a > div > h3 {
+    color: black;
+    font-size: 30px;
+  }
+  .education .educationDiv #educationDivTexts > a:hover i,
+  .education .educationDiv #educationDivTexts > a:hover h3 {
+    color: red;
+    transition: 0.4s;
+  }
+  .education .educationDiv #educationDivTexts > h4 {
+    color: gray;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  .education .educationDiv #educationDivTexts h5 {
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+  }
+  .education .educationDiv > p {
+    font-size: 18px;
+    color: #c0776e;
+  }
+  .skills {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+  }
+  .skills > h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  .skills > h3 {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 100;
+    opacity: 0.7;
+  }
+  .skills > .skills-icons {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .skills > .skills-icons > a > i {
+    font-size: 50px;
+    color: gray;
+  }
+  .skills > .skills-icons > a > img {
+    width: 150px;
+  }
+  .skills #skillsUl {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .skills #skillsUl li {
+    font-size: 18px;
+    list-style: square;
+  }
+  .interests {
+    width: 100%;
+    min-height: 50vh;
+    padding: 80px 20px 80px 50px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    gap: 30px;
+  }
+  .interests > h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  .interests > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .interests > div > h3 {
+    font-weight: 100;
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header nav {
+    width: 100%;
+    min-height: 80px;
+    background-color: #bd5d38;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  header nav .menuactive {
+    top: 6%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 230px;
+    position: fixed;
+    background-color: #bd5d38;
+    z-index: 1;
+    align-items: start;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  header nav .menuactive > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  header nav .menuactive > ul > li a {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  header nav .menuactive > ul > li > a:hover {
+    color: #d9d9d9;
+    transition: 0.4s;
+  }
+  header nav .topnav {
+    width: 90%;
+    height: 80px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+  }
+  header nav .topnav #menubtn {
+    display: block;
+    color: white;
+    font-size: 22px;
+  }
+  header nav .topnav #navH2 {
+    display: block;
+    color: white;
+    font-size: 25px;
+  }
+  header nav .topnav > ul {
+    display: none;
+  }
+  .frontend {
+    height: 60vh;
+    text-align: center;
+  }
+  .frontend #frontEndH2 {
+    font-size: 3rem;
+  }
+  .aboutSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 350px;
+    padding: 100px 20px 100px 20px;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+  }
+  .aboutSection .aboutMain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+  .aboutSection .aboutMain h1 {
+    font-size: 4rem;
+  }
+  .aboutSection .aboutMain .numberMail {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .aboutSection .aboutMain .numberMail > h3 {
+    color: rgb(86, 84, 84);
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .aboutSection .aboutMain .numberMail > a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #96401e;
+    -webkit-text-decoration: dotted;
+            text-decoration: dotted;
+  }
+  .aboutSection .aboutMain .numberMail > a:hover {
+    color: red;
+  }
+  .aboutSection .aboutMain > h4 {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .aboutSection .aboutMain .social-icon {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aboutSection .aboutMain .social-icon > a {
+    color: white;
+    width: 60px;
+    height: 60px;
+    background-color: #565656;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .aboutSection .aboutMain .social-icon > a i {
+    font-size: 25px;
+  }
+  .aboutSection .aboutMain .social-icon > a:hover {
+    background-color: #96401e;
+    transition: 0.4s;
+  }
+  .education {
+    width: 100%;
+    min-height: 90vh;
+    padding: 80px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+  }
+  .education > h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+  }
+  .education .educationDiv {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .education .educationDiv #educationDivTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .education .educationDiv #educationDivTexts > a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .education .educationDiv #educationDivTexts > a > h3 {
+    color: black;
+    font-size: 25px;
+  }
+  .education .educationDiv #educationDivTexts > a > h3 i {
+    color: black;
+    font-size: 20px;
+  }
+  .education .educationDiv #educationDivTexts > a:hover i,
+  .education .educationDiv #educationDivTexts > a:hover h3 {
+    color: red;
+    transition: 0.4s;
+  }
+  .education .educationDiv #educationDivTexts > h4 {
+    color: gray;
+    font-weight: 100;
+    font-size: 18px;
+  }
+  .education .educationDiv #educationDivTexts h5 {
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+  }
+  .education .educationDiv > p {
+    font-size: 18px;
+    color: #c0776e;
+  }
+  .skills {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    align-items: center;
+  }
+  .skills > h2 {
+    font-size: 40px;
+    border-bottom: 1px solid black;
+  }
+  .skills > h3 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    opacity: 0.7;
+  }
+  .skills > .skills-icons {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skills > .skills-icons > a > i {
+    font-size: 50px;
+    color: gray;
+  }
+  .skills > .skills-icons > a > img {
+    width: 150px;
+  }
+  .skills #skillsUl {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  .skills #skillsUl li {
+    font-size: 18px;
+    list-style: square;
+  }
+  .interests {
+    width: 100%;
+    min-height: 50vh;
+    padding: 80px 20px 80px 20px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .interests > h2 {
+    font-size: 30px;
+    border-bottom: 1px solid black;
+  }
+  .interests > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .interests > div > h3 {
+    font-weight: 100;
+    opacity: 0.7;
+  }
+}
