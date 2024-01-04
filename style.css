@@ -44,8 +44,7 @@ header .topnav {
   justify-content: center;
   overflow: hidden;
   z-index: 1;
-  border-top-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+  transition: .3s;
 }
 
 header .topnav #menubtn {
@@ -75,6 +74,7 @@ header .topnav>ul img {
   border-image: initial;
   border-radius: 50%;
   object-fit: cover;
+  scale: 1.4;
 }
 
 header .topnav>ul img:hover {
