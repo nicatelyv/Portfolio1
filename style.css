@@ -76,13 +76,14 @@ header .topnav>ul img {
   border-radius: 50%;
   object-fit: cover;
   scale: 1.4;
+  transition: .5s;
 }
 
 header .topnav>ul img:hover {
-  max-width: 11rem;
-  max-height: 11rem;
+  max-width: 10rem;
+  max-height: 10rem;
   border-color: rgba(255, 255, 255, 0.2);
-  transition: 1s;
+  transition: .5s;
 }
 
 header .topnav>ul>ul {
@@ -100,11 +101,12 @@ header .topnav>ul>ul>li a {
   text-transform: uppercase;
   font-weight: 900;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: .2s;
 }
 
 header .topnav>ul>ul>li>a:hover {
   color: #d9d9d9;
-  transition: 0.4s;
+  transition: 0.2s;
   letter-spacing: .3rem;
 }
 
