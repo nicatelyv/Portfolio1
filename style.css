@@ -73,7 +73,7 @@ header .topnav>ul img {
   border-color: #1F1F1F;
   -o-border-image: initial;
   border-image: initial;
-  border-radius: 50%;
+  border-radius: 100% !important;
   object-fit: cover;
   scale: 1.4;
   transition: .5s;
